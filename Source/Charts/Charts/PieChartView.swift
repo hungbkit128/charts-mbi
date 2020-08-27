@@ -414,9 +414,9 @@ open class PieChartView: PieRadarChartViewBase
                 
                 attrString = NSMutableAttributedString(string: newValue!)
                 attrString?.setAttributes([
-                    NSAttributedStringKey.foregroundColor: NSUIColor.black,
-                    NSAttributedStringKey.font: entryLabelFont,
-                    NSAttributedStringKey.paragraphStyle: paragraphStyle
+                    NSAttributedString.Key.foregroundColor: NSUIColor.black,
+                    NSAttributedString.Key.font: entryLabelFont,
+                    NSAttributedString.Key.paragraphStyle: paragraphStyle
                     ], range: NSMakeRange(0, attrString!.length))
             }
             self.centerAttributedText = attrString
@@ -687,7 +687,7 @@ open class PieChartView: PieRadarChartViewBase
         self.addSubview(rightLable)
     }
     public func setLeftLable() {
-        let fontAttributes = [NSAttributedStringKey.font: self.entryLabelFont]
+        let fontAttributes = [NSAttributedString.Key.font: self.entryLabelFont]
         let guageWith = (self.circleBox.size.width - self.circleBox.size.width * holeRadiusPercent) / 2
         let yOfView = self.contentRect.origin.y + self.contentRect.size.height / 2.0 + _circleBox.width / 5
         let centerView = self.contentRect.size.width / 2.0
@@ -700,7 +700,7 @@ open class PieChartView: PieRadarChartViewBase
         
     }
     public func setRightLable() {
-        let fontAttributes = [NSAttributedStringKey.font: self.entryLabelFont]
+        let fontAttributes = [NSAttributedString.Key.font: self.entryLabelFont]
         let guageWith = (self.circleBox.size.width - self.circleBox.size.width * holeRadiusPercent) / 2
         let yOfView = self.contentRect.origin.y + self.contentRect.size.height / 2.0 + _circleBox.width / 5
         let centerView = self.contentRect.size.width / 2.0

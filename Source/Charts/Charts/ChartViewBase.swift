@@ -129,6 +129,7 @@ open class ChartViewBase: NSUIView, ChartDataProvider, AnimatorDelegate
     internal var _legend: Legend!
     
     /// delegate to receive chart events
+    @objc
     open weak var delegate: ChartViewDelegate?
     
     /// text that is displayed when the chart is empty
@@ -365,8 +366,8 @@ open class ChartViewBase: NSUIView, ChartDataProvider, AnimatorDelegate
                 text: noDataText,
                 point: CGPoint(x: frame.width / 2.0, y: frame.height / 2.0),
                 attributes:
-                [NSAttributedStringKey(rawValue: NSAttributedStringKey.font.rawValue): noDataFont,
-                 NSAttributedStringKey(rawValue: NSAttributedStringKey.foregroundColor.rawValue): noDataTextColor],
+                [NSAttributedString.Key(rawValue: NSAttributedString.Key.font.rawValue): noDataFont,
+                 NSAttributedString.Key(rawValue: NSAttributedString.Key.foregroundColor.rawValue): noDataTextColor],
                 constrainedToSize: self.bounds.size,
                 anchor: CGPoint(x: 0.5, y: 0.5),
                 angleRadians: 0.0)
@@ -403,10 +404,10 @@ open class ChartViewBase: NSUIView, ChartDataProvider, AnimatorDelegate
                 y: frame.height - _viewPortHandler.offsetBottom - description.yOffset - description.font.lineHeight)
         }
         
-        var attrs = [NSAttributedStringKey : Any]()
+        var attrs = [NSAttributedString.Key : Any]()
         
-        attrs[NSAttributedStringKey.font] = description.font
-        attrs[NSAttributedStringKey.foregroundColor] = description.textColor
+        attrs[NSAttributedString.Key.font] = description.font
+        attrs[NSAttributedString.Key.foregroundColor] = description.textColor
 
         ChartUtils.drawText(
             context: context,

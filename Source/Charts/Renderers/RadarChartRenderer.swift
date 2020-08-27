@@ -194,8 +194,8 @@ open class RadarChartRenderer: LineRadarRenderer
                             viewPortHandler: viewPortHandler),
                         point: CGPoint(x: p.x, y: p.y - yoffset - valueFont.lineHeight),
                         align: .center,
-                        attributes: [NSAttributedStringKey(rawValue: NSAttributedStringKey.font.rawValue): valueFont,
-                                     NSAttributedStringKey(rawValue: NSAttributedStringKey.foregroundColor.rawValue): dataSet.valueTextColorAt(j)]
+                        attributes: [NSAttributedString.Key(rawValue: NSAttributedString.Key.font.rawValue): valueFont,
+                                     NSAttributedString.Key(rawValue: NSAttributedString.Key.foregroundColor.rawValue): dataSet.valueTextColorAt(j)]
                     )
                 }
                 

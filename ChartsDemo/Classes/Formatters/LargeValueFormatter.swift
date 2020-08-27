@@ -7,8 +7,8 @@
 import Foundation
 import Charts
 
-open class LargeValueFormatter: NSObject, IValueFormatter, IAxisValueFormatter
-{
+open class LargeValueFormatter: NSObject, IValueFormatter {
+    
     fileprivate static let MAX_LENGTH = 5
     
     /// Suffix to be appended after the values.

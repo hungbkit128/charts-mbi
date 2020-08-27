@@ -177,7 +177,7 @@ open class YAxisRendererHorizontalBarChart: YAxisRenderer
                 text: text,
                 point: CGPoint(x: positions[i].x, y: fixedPosition - offset),
                 align: .center,
-                attributes: [NSAttributedStringKey(rawValue: NSAttributedStringKey.font.rawValue): labelFont, NSAttributedStringKey(rawValue: NSAttributedStringKey.foregroundColor.rawValue): labelTextColor])
+                attributes: [NSAttributedString.Key(rawValue: NSAttributedString.Key.font.rawValue): labelFont, NSAttributedString.Key(rawValue: NSAttributedString.Key.foregroundColor.rawValue): labelTextColor])
         }
     }
     
@@ -342,7 +342,7 @@ open class YAxisRendererHorizontalBarChart: YAxisRenderer
                             x: position.x + xOffset,
                             y: viewPortHandler.contentTop + yOffset),
                         align: .left,
-                        attributes: [NSAttributedStringKey(rawValue: NSAttributedStringKey.font.rawValue): l.valueFont, NSAttributedStringKey(rawValue: NSAttributedStringKey.foregroundColor.rawValue): l.valueTextColor])
+                        attributes: [NSAttributedString.Key(rawValue: NSAttributedString.Key.font.rawValue): l.valueFont, NSAttributedString.Key(rawValue: NSAttributedString.Key.foregroundColor.rawValue): l.valueTextColor])
                 }
                 else if l.labelPosition == .rightBottom
                 {
@@ -352,7 +352,7 @@ open class YAxisRendererHorizontalBarChart: YAxisRenderer
                             x: position.x + xOffset,
                             y: viewPortHandler.contentBottom - labelLineHeight - yOffset),
                         align: .left,
-                        attributes: [NSAttributedStringKey(rawValue: NSAttributedStringKey.font.rawValue): l.valueFont, NSAttributedStringKey(rawValue: NSAttributedStringKey.foregroundColor.rawValue): l.valueTextColor])
+                        attributes: [NSAttributedString.Key(rawValue: NSAttributedString.Key.font.rawValue): l.valueFont, NSAttributedString.Key(rawValue: NSAttributedString.Key.foregroundColor.rawValue): l.valueTextColor])
                 }
                 else if l.labelPosition == .leftTop
                 {
@@ -362,7 +362,7 @@ open class YAxisRendererHorizontalBarChart: YAxisRenderer
                             x: position.x - xOffset,
                             y: viewPortHandler.contentTop + yOffset),
                         align: .right,
-                        attributes: [NSAttributedStringKey(rawValue: NSAttributedStringKey.font.rawValue): l.valueFont, NSAttributedStringKey(rawValue: NSAttributedStringKey.foregroundColor.rawValue): l.valueTextColor])
+                        attributes: [NSAttributedString.Key(rawValue: NSAttributedString.Key.font.rawValue): l.valueFont, NSAttributedString.Key(rawValue: NSAttributedString.Key.foregroundColor.rawValue): l.valueTextColor])
                 }
                 else
                 {
@@ -372,7 +372,7 @@ open class YAxisRendererHorizontalBarChart: YAxisRenderer
                             x: position.x - xOffset,
                             y: viewPortHandler.contentBottom - labelLineHeight - yOffset),
                         align: .right,
-                        attributes: [NSAttributedStringKey(rawValue: NSAttributedStringKey.font.rawValue): l.valueFont, NSAttributedStringKey(rawValue: NSAttributedStringKey.foregroundColor.rawValue): l.valueTextColor])
+                        attributes: [NSAttributedString.Key(rawValue: NSAttributedString.Key.font.rawValue): l.valueFont, NSAttributedString.Key(rawValue: NSAttributedString.Key.foregroundColor.rawValue): l.valueTextColor])
                 }
             }
         }

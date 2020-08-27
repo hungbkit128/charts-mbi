@@ -373,7 +373,7 @@ open class CandleStickChartRenderer: LineScatterCandleRadarRenderer
                                 x: pt.x,
                                 y: pt.y - yOffset),
                             align: .center,
-                            attributes: [NSAttributedStringKey(rawValue: NSAttributedStringKey.font.rawValue): valueFont, NSAttributedStringKey(rawValue: NSAttributedStringKey.foregroundColor.rawValue): dataSet.valueTextColorAt(j)])
+                            attributes: [NSAttributedString.Key(rawValue: NSAttributedString.Key.font.rawValue): valueFont, NSAttributedString.Key(rawValue: NSAttributedString.Key.foregroundColor.rawValue): dataSet.valueTextColorAt(j)])
                     }
                     
                     if let icon = e.icon, dataSet.isDrawIconsEnabled

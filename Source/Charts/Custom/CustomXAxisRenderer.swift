@@ -60,7 +60,7 @@ open class CustomXAxisRenderer: XAxisRenderer
         for i in stride(from: 0, to: entries.count, by: 1)
         {
             //label attrs moved to here
-            var labelAttrs: [NSAttributedStringKey : Any]!
+            var labelAttrs: [NSAttributedString.Key : Any]!
             
             for j in 0..<labelList.count {
                 labelList[j] = labelList[j].trimmingCharacters(in: NSCharacterSet.whitespacesAndNewlines).uppercased()

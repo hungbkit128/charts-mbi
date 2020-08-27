@@ -33,20 +33,6 @@
 			remoteGlobalIDString = 06165F2E1D8110E600722320;
 			remoteInfo = ChartsTests;
 		};
-		0630AE741D812840008859B0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0630AE691D812840008859B0 /* Charts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 06B120D51D811E6200D14B02;
-			remoteInfo = ChartsRealm;
-		};
-		0630AE761D812840008859B0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0630AE691D812840008859B0 /* Charts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 06B120FF1D811F1600D14B02;
-			remoteInfo = ChartsRealmTests;
-		};
 		0630AE8E1D8128A5008859B0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0630AE691D812840008859B0 /* Charts.xcodeproj */;
@@ -100,8 +86,6 @@
 			children = (
 				0630AE711D812840008859B0 /* Charts.framework */,
 				0630AE731D812840008859B0 /* ChartsTests.xctest */,
-				0630AE751D812840008859B0 /* ChartsRealm.framework */,
-				0630AE771D812840008859B0 /* ChartsRealmTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -189,6 +173,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -221,20 +206,6 @@
 			fileType = wrapper.cfbundle;
 			path = ChartsTests.xctest;
 			remoteRef = 0630AE721D812840008859B0 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		0630AE751D812840008859B0 /* ChartsRealm.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ChartsRealm.framework;
-			remoteRef = 0630AE741D812840008859B0 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		0630AE771D812840008859B0 /* ChartsRealmTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ChartsRealmTests.xctest;
-			remoteRef = 0630AE761D812840008859B0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -381,7 +352,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dcg.ChartsDemo-OSX";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -395,7 +366,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dcg.ChartsDemo-OSX";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};

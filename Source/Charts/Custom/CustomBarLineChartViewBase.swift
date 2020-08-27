@@ -750,7 +750,7 @@ open class CustomBarLineChartViewBase: ChartViewBase, BarLineScatterCandleBubble
                     _decelerationVelocity = recognizer.velocity(in: self)
                     
                     _decelerationDisplayLink = NSUIDisplayLink(target: self, selector: #selector(CustomBarLineChartViewBase.decelerationLoop))
-                    _decelerationDisplayLink.add(to: RunLoop.main, forMode: RunLoopMode.commonModes)
+                    _decelerationDisplayLink.add(to: RunLoop.main, forMode: RunLoop.Mode.common)
                 }
                 
                 _isDragging = false
@@ -807,7 +807,7 @@ open class CustomBarLineChartViewBase: ChartViewBase, BarLineScatterCandleBubble
     {
         if _decelerationDisplayLink !== nil
         {
-            _decelerationDisplayLink.remove(from: RunLoop.main, forMode: RunLoopMode.commonModes)
+            _decelerationDisplayLink.remove(from: RunLoop.main, forMode: RunLoop.Mode.common)
             _decelerationDisplayLink = nil
         }
     }
